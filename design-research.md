@@ -1,6 +1,8 @@
 # Design research log
 
-Research notes for Sims Fitness, written by forge-design's Research step. References are links plus notes; no third-party screenshots live in this repo. Screenshots of our own app are in `design/current/`.
+Research notes for Sims Fitness, written by forge-design's Research step.
+
+The bar every idea has to clear: **ease of use and ease of input.** We take the idea that makes logging faster, never another app's look. References are links plus notes; no third-party screenshots live in this repo. Screenshots of our own app are in `design/current/`.
 
 ## 2026-09-26: Sign-in screen, mobile (pilot run)
 
@@ -95,3 +97,35 @@ Not taking: the carousel dots and multi-step intro.
 | Actual sign-in screens | 0 | 10 |
 | Answered an open question | No | Yes (roles before names) |
 | Time to usable references | About 40 minutes, including browser workarounds | 2 searches, a few minutes |
+
+## 2026-09-26: Today card and navigation, mobile (Mobbin)
+
+Job: open the app, log the one thing you're there to log, close it. At 6am that's sets. At 8pm that's food.
+
+Sources: Mobbin (MCP), plus 14 screenshots of our own app from Nick's phone (kept out of the repo).
+
+What we have today: five tabs in a top bar that clips on every phone screen, and a Today card that stacks food, snacks, the 8pm button, the workout picker, weight, bonus and moves in one column.
+
+### Ref 10: Centr, Home with labeled Move and Meals sections (https://mobbin.com/screens/e7523bd0-c371-441a-9971-c8abf5f81578)
+Taking: two plain labels that split the day into its two jobs.
+Not taking: the photo cards, the carousel, the plan switcher.
+
+### Ref 11: Yazio, Diary with a Nutrition block (https://mobbin.com/screens/3fd304c4-9207-4734-a7bd-98493d252754)
+Taking: food lives in its own block so it can move as a unit.
+Not taking: per-meal rows. Our faces are faster than meal logging, and that's the point.
+
+### Ref 12: Hevy, live workout with a Previous column (https://mobbin.com/screens/b7c6155c-8453-4230-9c28-a12218a415d8)
+Confirms what we already have: "Last time" next to the input is the most useful detail in a lifting log. No change needed.
+
+### Ref 13: Garmin Connect, Peloton, Hevy, Tonal: bottom tab bars (https://mobbin.com/screens/6a8103d0-b97e-46aa-a290-1014d55c5353)
+Taking: navigation at the bottom, in thumb reach, icon plus a one-word label, every tab visible.
+Not taking: a More tab. Five fits.
+
+### What shipped to the preview
+
+See `design/next-build/README.md`. Bottom tabs on phones, and the Today card split into Train and Eat, ordered by time of day. Nothing new to learn: same controls, same colors, same words.
+
+### Still open
+
+- The Goals strength-test table scrolls sideways with no hint. Separate small pass.
+- "Workout A" in the day picker doesn't match the card names on the Workouts tab.
