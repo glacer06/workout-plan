@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Steph Fitness B icon, blue background">
+ <defs>
+   <linearGradient id="handle" x1=".1" y1="0" x2=".7" y2="1" objectBoundingBox="true"><stop stop-color="#597AB8"/><stop offset=".12" stop-color="#223D6D"/><stop offset=".5" stop-color="#071530"/><stop offset=".85" stop-color="#172B52"/><stop offset="1" stop-color="#06112A"/></linearGradient>
+  <linearGradient id="shoulder" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3172DC"/><stop offset=".2" stop-color="#183967"/><stop offset=".49" stop-color="#3978DB"/><stop offset=".75" stop-color="#13366C"/><stop offset="1" stop-color="#081B3D"/></linearGradient>
+  <linearGradient id="front" x1=".2" y1="0" x2=".8" y2="1"><stop stop-color="#233C66"/><stop offset=".5" stop-color="#0F2041"/><stop offset="1" stop-color="#071530"/></linearGradient>
+  <linearGradient id="letter" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEFF3"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="18"/></filter>
+ </defs>
+ <rect width="1024" height="1024" fill="#0868FB"/>
+ <ellipse cx="510" cy="905" rx="260" ry="32" fill="#061331" opacity=".16" filter="url(#shadow)"/>
+ <!-- Handle cutout uses an even-odd compound path, not a background-coloured patch. -->
+ <path fill="url(#handle)" fill-rule="evenodd" d="M 382 89 C 462 80 568 80 642 89 C 758 100 820 161 818 252 C 816 313 785 383 766 452 L 257 452 C 239 386 204 315 203 252 C 199 159 265 101 382 89 Z M 399 209 C 355 213 327 243 328 281 C 330 311 345 348 364 366 C 378 377 398 366 419 357 Q 511 345 605 357 C 632 360 644 375 661 362 C 681 346 695 304 693 277 C 691 233 661 212 620 210 Q 506 203 399 209 Z"/>
+ <!-- Same kettlebell geometry and facets in both editions. -->
+ <path fill="url(#shoulder)" d="M 388 355 Q 510 342 633 355 C 699 362 747 425 778 479 L 825 566 Q 846 607 836 644 Q 811 725 744 835 Q 708 897 641 903 L 385 903 Q 316 896 281 840 C 249 791 213 719 187 655 Q 169 610 196 562 L 244 478 C 283 411 331 365 388 355 Z"/>
+ <path fill="#071A3D" opacity=".74" d="M 244 478 L 316 441 L 251 615 L 316 833 Q 262 774 187 655 Q 169 610 196 562 Z"/>
+ <path fill="#071A3D" opacity=".8" d="M 778 479 L 708 441 L 771 615 L 704 834 Q 771 765 836 644 Q 846 607 825 566 Z"/>
+ <path fill="url(#front)" d="M 393 415 L 627 415 Q 654 416 671 442 L 760 580 Q 781 607 769 639 L 693 824 Q 669 886 618 899 L 403 899 Q 352 890 330 834 L 258 651 Q 240 616 263 580 L 348 441 Q 365 416 393 415 Z"/>
+ <path d="M 393 416 L 627 416 Q 654 417 671 443" fill="none" stroke="#607CAE" stroke-width="5" opacity=".55"/>
+ <!-- Custom outlined S built from a single editable vector path rather than live font text. -->
+ <path d="M 632 579 L 571 579 Q 561 578 560 566 Q 558 549 533 549 L 491 549 Q 462 548 460 565 Q 457 582 485 590 L 586 619 Q 645 636 648 686 Q 651 741 608 765 Q 583 779 544 779 L 474 779 Q 417 778 390 745 Q 373 724 374 686 Q 374 679 383 679 L 445 679 Q 454 680 455 691 Q 456 713 480 713 L 528 713 Q 552 713 559 697 Q 566 679 537 671 L 437 644 Q 380 628 379 575 Q 378 524 417 502 Q 442 488 483 488 L 548 488 Q 597 489 625 521 Q 642 540 641 571 Q 641 579 632 579 Z" fill="url(#letter)" stroke="#06132C" stroke-width="8" stroke-linejoin="round"/>
+ </svg>
