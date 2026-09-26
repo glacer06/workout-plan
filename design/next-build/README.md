@@ -28,10 +28,10 @@ where name = 'app-next.js' and md5(body) = '8821b7e02f7b20455e7de42abdfe393b';
 
 Not done. Promote only after checking it on both phones. Rebase on the current `app.js` first, since another session also ships to this table.
 
-## Next up: Goals strength tests (built and tested, not shipped yet)
+## Goals strength tests (shipped to the preview 2026-09-26 18:13 UTC)
 
 - The Goals table becomes one card per test with four week buttons (Week 1, 4, 8, 12). Tap a week and a sheet opens with a big number, minus and plus buttons, and a slider. Save writes it straight to the plan, with no Edit plan mode.
 - The picker starts at your last result for that test. Units and ranges come from the test: lbs in 5 lb steps (deadlift 45 to 315, machines 10 to 250, bells 5 to 100), plank in seconds (5 to 90), push-ups in reps.
 - Each card shows the gain since Week 1. Edit plan still shows the old table, for renaming tests.
 - `patch-goals.py` builds it from `app-next.before-goals.js` (md5 `8821b7e0...`, the build with the Today card and tabs). Tested result md5 `89bd88d2...`.
-- Not shipped: the write to `game_plan.assets` needs Nick's go-ahead.
+- Shipped with the same guarded write after Nick said go. Roll back by setting the row to `app-next.before-goals.js` (guard on md5 `89bd88d2...`).
