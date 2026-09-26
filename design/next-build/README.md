@@ -74,3 +74,16 @@ Nick said "promote to live". Everything above is now in `app.js`.
 update game_plan.assets set body = (select body from game_plan._app_js_snapshots where note like 'live app.js before design promote%' order by taken_at desc limit 1), updated_at = now()
 where name = 'app.js' and md5(body) = '1ddf69a1b96208cb0597bee3d0f45ddf';
 ```
+
+## Palette (shipped to the preview 2026-09-26)
+
+Nick's direction: he's black and old gold, Steph is berry, and the orange comes from Syracuse. Every color now means something.
+
+- **Black and warm paper** are the base. The background moved from gray-green (`#f3f4f1`) to a warm off-white (`#f6f3ec`), and the grays spread further apart, so "Off" reads lighter and session details read darker.
+- **Old gold is Nick, berry is Steph.** Their color is on their column in the weekly table (header underline and a bar beside each session), on their avatar ring in the header, and on the "at the gym" tag for the other person. The table follows whose log is open, so Steph sees her berry column first.
+- **Orange means do this now.** Today's day, the active tab, and the Today card border use a darker orange so text stays readable (4.9:1 on white). Primary buttons are a brighter orange with black text (6.2:1).
+- **Workout day dots** moved off gold and red so they don't clash with Nick and Steph: blue, green, and black, like bumper plates.
+- **Sign-in:** the Me and You circles are black with an old gold ring.
+- **Dark mode fix:** the page shell (`index.html`) set the body text color with a stronger selector, so in dark mode the app used the muted gray for everything, headings included. The bundle now sets full ink. This bug is also on live.
+- **Not changed:** the blue kettlebell logo and app icon. They're files in this repo, not in the bundle, and they clash with the new palette. A black and gold version is the next step.
+- `patch-palette.py`, guarded from md5 `772263e1...` (`app-next.before-palette.js`) to `415bbedb...`. Roll back by setting the row to `app-next.before-palette.js`, guarded on md5 `415bbedb...`.

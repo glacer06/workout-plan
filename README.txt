@@ -1,4 +1,13 @@
-SIMS FITNESS - FINAL B ICON SET
+SIMS FITNESS - ICON SET
+
+Current mark (Sept 26, 2026): the same B kettlebell in black and gunmetal grey with an old gold S, on dark grey.
+  sims-fitness-gold.svg / .png          1024 x 1024 app icon on dark grey (#2B2B2B).
+  sims-fitness-gold-180.png             180 x 180 home screen icon (apple-touch-icon).
+  sims-fitness-gold-transparent.svg/.png Same mark, no background. Used in the app header.
+  favicon-gold.svg                      Tighter rounded crop for browser tabs.
+The blue files below are the original approved set, kept for reference and rollback.
+
+ORIGINAL B ICON SET (blue)
 
 The final mark is candidate B: dark navy faceted kettlebell with a bold white S.
 (The app was renamed from Steph Fitness to Sims Fitness on Sept 26, 2026. File names below were kept so nothing breaks.)
