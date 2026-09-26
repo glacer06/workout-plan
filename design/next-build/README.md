@@ -48,3 +48,13 @@ Not done. Promote only after checking it on both phones. Rebase on the current `
 - Auto sign-in: the app already set Google's `auto_select`, but never called `google.accounts.id.prompt()`, so the "Continue as" prompt never showed. It now does, on the sign-in screen only.
 - Not added: the blurred week preview from the research. There's no real data before sign-in, so it would be decoration.
 - `patch-signin.py`, guarded from md5 `e9df479b...` to `68ed556e...`. Screenshots: `design/current/signin-preview-*.png`.
+
+## Sign-in, second pass (shipped to the preview 2026-09-26 18:28 UTC)
+
+Nick's direction: it's about two people working out in tandem, not the coach, and the screen doesn't need to explain sign-in.
+
+- Line: "Two people, one 12-week plan."
+- Chips: Me and You, with a fist bump between them. No coach chip.
+- Removed the fine print about signing in once and the old private link, here and in the sign-in nudge on the Week tab.
+- The fist bump is a button: tap it (or hover with a mouse) and the fists pull back, bump, and a heart pops up and floats away. Off when the phone asks for reduced motion.
+- `patch-signin-2.py`, guarded from md5 `68ed556e...` to `772263e1...`.
