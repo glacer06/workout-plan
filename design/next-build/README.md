@@ -58,3 +58,19 @@ Nick's direction: it's about two people working out in tandem, not the coach, an
 - Removed the fine print about signing in once and the old private link, here and in the sign-in nudge on the Week tab.
 - The fist bump is a button: tap it (or hover with a mouse) and the fists pull back, bump, and a heart pops up and floats away. Off when the phone asks for reduced motion.
 - `patch-signin-2.py`, guarded from md5 `68ed556e...` to `772263e1...`.
+
+## Promoted to live (2026-09-26 18:33 UTC)
+
+Nick said "promote to live". Everything above is now in `app.js`.
+
+- Live `app.js` was the preview loader + PJ's 17:39 build (md5 `8749e766...`) + a closing brace. The new live is the same loader + the tested preview (md5 `772263e1...`) + the same brace, built inside the database from the preview row. Guarded: it only applied if live was still `43405b00...` and the result matched the tested file `1ddf69a1...`.
+- Tested before the swap in the local harness as the live file: tabs, Today card, log and bonus drawers, Goals picker, sign-in fist bump.
+- Checked after: the live site serves `1ddf69a1...` and shows the new sign-in screen (`design/current/signin-live-light-390.png`).
+- Backup: the previous live build is saved in `game_plan._app_js_snapshots` with the note "live app.js before design promote ... 2026-09-26".
+
+### Roll back live
+
+```sql
+update game_plan.assets set body = (select body from game_plan._app_js_snapshots where note like 'live app.js before design promote%' order by taken_at desc limit 1), updated_at = now()
+where name = 'app.js' and md5(body) = '1ddf69a1b96208cb0597bee3d0f45ddf';
+```
