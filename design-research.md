@@ -52,3 +52,46 @@ Recommendation: direction 2. It says the one true, specific thing (a plan for tw
 - Where the names come from before sign-in. Showing initials to a signed-out visitor exposes who's on the plan; the chips may need to be generic roles ("You, Partner, Coach") until after sign-in.
 - The UI source lives in the Supabase edge function `game-plan-app`, not in this repo. Build on the `?next=1` channel first, then promote.
 - Gates still to run on the built version: contrast in both themes, 44px hit targets, 4 widths, reduced motion.
+
+## 2026-09-26: Sign-in screen, mobile, second pass with Mobbin
+
+Same job and scene as the pilot above. Sources: Mobbin (MCP, connected through the Claude connector). Two searches: fitness sign-in screens, and shared-plan or household welcome screens.
+
+### Ref 5: Cal AI, sign-in sheet over a product preview (https://mobbin.com/screens/cae33fa7-93df-48ae-8232-fb246efa55fc)
+Pattern: the real home screen sits behind a bottom sheet that holds the sign-in buttons. You see what you're signing into before you sign in.
+Fits our scene because: it's direction 3 ("Peek") done by a shipped nutrition tracker, which is half of what our app does.
+Not taking: their Apple-first button stack, their card styling.
+
+### Ref 6: Ladder, one-line purpose headline (https://mobbin.com/screens/45937175-2a08-4aa0-be6c-86425c3d24a9)
+Pattern: a condensed uppercase headline, "Sign in now to find your plan", then a single sign-in button.
+Fits our scene because: our wordmark already uses a condensed uppercase face. One line in that voice ("Your 12-week plan") costs nothing and fixes the "what is this" gap.
+Not taking: the full-bleed athlete photo.
+
+### Ref 7: Fitbit, Google account sheet (https://mobbin.com/screens/bb60888c-fb65-4cbd-968b-4a09d5bc5e47)
+Pattern: Google's own "Continue as <name>" sheet slides up, so a returning person signs in with one tap.
+Fits our scene because: we already use Google Identity Services, which offers this One Tap prompt. Most sign-ins here are returning users on their own phone.
+Not taking: the illustration.
+
+### Ref 8 (outside the category): Citizen, family plan members row (https://mobbin.com/screens/67dac07c-e152-494a-a3e7-e819f5bd9454)
+Pattern: a row of circles, the first filled with the signed-in person, the rest labeled with roles ("e.g. Mom", "e.g. Dad") until real people join.
+Fits our scene because: it answers the open question from the pilot. Show roles, not names, until someone is signed in: "You, Partner, Coach".
+Not taking: the invite list and contacts search.
+
+### Ref 9 (outside the category): Pangea, shared-plan preview with a one-line promise (https://mobbin.com/screens/430c31d2-b130-42bb-8bcf-a067ff971a69)
+Pattern: a phone-shaped preview of the shared plan, one line ("Share your future travel plans"), one button.
+Fits our scene because: another shared-plan product that leads with the plan itself, not the brand.
+Not taking: the carousel dots and multi-step intro.
+
+### What changed
+
+- Direction 3 now has shipped evidence (Cal AI), and direction 2 has a clean answer to the privacy question (Citizen's role placeholders).
+- New recommendation: combine them. A blurred week preview up top, then a bottom sheet with a one-line headline, three role chips (You, Partner, Coach), and the Google button, with One Tap for returning users.
+
+### Free sources vs Mobbin, same brief
+
+| | Free (Appshot) | Mobbin |
+|---|---|---|
+| Relevant results | 4, all App Store marketing screens | 20 real in-app screens, 6 used |
+| Actual sign-in screens | 0 | 10 |
+| Answered an open question | No | Yes (roles before names) |
+| Time to usable references | About 40 minutes, including browser workarounds | 2 searches, a few minutes |
