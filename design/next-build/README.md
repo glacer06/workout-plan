@@ -35,3 +35,8 @@ Not done. Promote only after checking it on both phones. Rebase on the current `
 - Each card shows the gain since Week 1. Edit plan still shows the old table, for renaming tests.
 - `patch-goals.py` builds it from `app-next.before-goals.js` (md5 `8821b7e0...`, the build with the Today card and tabs). Tested result md5 `89bd88d2...`.
 - Shipped with the same guarded write after Nick said go. Roll back by setting the row to `app-next.before-goals.js` (guard on md5 `89bd88d2...`).
+
+## Workout names in the day picker (shipped to the preview 2026-09-26 18:17 UTC)
+
+- The Workout dropdown on each day now uses the names from the plan, the same words as the Workouts tab ("Day 1: Chest and Upper Body"), not "Workout A", "Solo card", "Workout C". Falls back to the old labels if a plan has no names.
+- `patch-workout-names.py`, guarded from md5 `89bd88d2...` to `e9df479b...`.

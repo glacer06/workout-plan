@@ -127,5 +127,5 @@ See `design/next-build/README.md`. Bottom tabs on phones, and the Today card spl
 
 ### Still open
 
-- The Goals strength-test table scrolls sideways with no hint. Separate small pass.
-- "Workout A" in the day picker doesn't match the card names on the Workouts tab.
+- ~~The Goals strength-test table scrolls sideways with no hint.~~ Replaced on the preview by tap-a-week cards with a number picker.
+- ~~"Workout A" in the day picker doesn't match the card names on the Workouts tab.~~ Fixed on the preview: the picker now uses the plan's workout names.
