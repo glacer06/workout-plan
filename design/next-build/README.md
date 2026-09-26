@@ -40,3 +40,11 @@ Not done. Promote only after checking it on both phones. Rebase on the current `
 
 - The Workout dropdown on each day now uses the names from the plan, the same words as the Workouts tab ("Day 1: Chest and Upper Body"), not "Workout A", "Solo card", "Workout C". Falls back to the old labels if a plan has no names.
 - `patch-workout-names.py`, guarded from md5 `89bd88d2...` to `e9df479b...`.
+
+## Sign-in screen (shipped to the preview 2026-09-26 18:20 UTC)
+
+- One line on what the app is ("Your 12-week plan, for the two of you and your coach."), three role chips (You, Partner, Coach; roles, never names, before sign-in), the Google button, and one fine-print line.
+- Dark mode wordmark fixed (it was rendering in the muted text color).
+- Auto sign-in: the app already set Google's `auto_select`, but never called `google.accounts.id.prompt()`, so the "Continue as" prompt never showed. It now does, on the sign-in screen only.
+- Not added: the blurred week preview from the research. There's no real data before sign-in, so it would be decoration.
+- `patch-signin.py`, guarded from md5 `e9df479b...` to `68ed556e...`. Screenshots: `design/current/signin-preview-*.png`.
