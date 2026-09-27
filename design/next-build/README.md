@@ -87,3 +87,11 @@ Nick's direction: he's black and old gold, Steph is berry, and the orange comes 
 - **Dark mode fix:** the page shell (`index.html`) set the body text color with a stronger selector, so in dark mode the app used the muted gray for everything, headings included. The bundle now sets full ink. This bug is also on live.
 - **Not changed:** the blue kettlebell logo and app icon. They're files in this repo, not in the bundle, and they clash with the new palette. A black and gold version is the next step.
 - `patch-palette.py`, guarded from md5 `772263e1...` (`app-next.before-palette.js`) to `415bbedb...`. Roll back by setting the row to `app-next.before-palette.js`, guarded on md5 `415bbedb...`.
+
+## Phosphor tab icons (shipped to the preview 2026-09-27)
+
+- The five tab icons are now Phosphor (MIT): calendar, barbell, fork and knife, flag, clipboard. Each tab carries two versions. Inactive tabs show the regular weight, and the active tab shows the filled one in the active orange.
+- Phones only. Desktop tabs stay text-only, as before.
+- `patch-phosphor.py` builds it from `app-next.before-phosphor.js` (md5 `8b744d41...`) using the SVGs in `ph-tabs.json`, fetched from the Phosphor set through Iconify. Result: `app-next.after-phosphor.js`, md5 `dcb95e66...`.
+- Shipped without retyping: Postgres fetched the tested build from this repo at a pinned commit with pg_net, then wrote it only if both md5s matched. Hand-copied SQL for this patch was twice rejected by the guard for stray digits, so this is the safer path for any large patch.
+- Roll back by writing `app-next.before-phosphor.js` back the same way, guarded on md5 `dcb95e66...`.
