@@ -95,3 +95,4 @@ Nick's direction: he's black and old gold, Steph is berry, and the orange comes 
 - `patch-phosphor.py` builds it from `app-next.before-phosphor.js` (md5 `8b744d41...`) using the SVGs in `ph-tabs.json`, fetched from the Phosphor set through Iconify. Result: `app-next.after-phosphor.js`, md5 `dcb95e66...`.
 - Shipped without retyping: Postgres fetched the tested build from this repo at a pinned commit with pg_net, then wrote it only if both md5s matched. Hand-copied SQL for this patch was twice rejected by the guard for stray digits, so this is the safer path for any large patch.
 - Roll back by writing `app-next.before-phosphor.js` back the same way, guarded on md5 `dcb95e66...`.
+- Promoted to live 2026-09-27 at Nick's go: `app.js` md5 `79e17a85...` to `8e15a31d...`, built in the database from the live loader prefix plus the preview. The prior live bundle is saved in `game_plan._app_js_snapshots`.
