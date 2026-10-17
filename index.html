@@ -10,15 +10,18 @@
 <meta name="theme-color" id="tc-light" content="#f6f3ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" id="tc-dark" content="#12110f" media="(prefers-color-scheme: dark)">
 <meta name="robots" content="noindex, nofollow">
-<link rel="apple-touch-icon" href="sims-fitness-gold-180.png?v=4">
+<link rel="apple-touch-icon" href="sims-fitness-gunmetal-180.png?v=1">
 <link rel="icon" type="image/svg+xml" href="favicon-gold.svg?v=4">
 <link rel="icon" type="image/png" href="sims-fitness-gold.png?v=4">
 <title>Sims Fitness</title>
-<script>(function(){try{var t=localStorage.getItem("gp-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<script>(function(){try{var r=document.documentElement,t=localStorage.getItem("gp-theme");if(t==="light"||t==="dark")r.setAttribute("data-theme",t);if(localStorage.getItem("sf-palette")==="blue"){r.setAttribute("data-palette","blue");var q=function(s,h){var l=document.querySelector(s);if(l)l.setAttribute("href",h);};q('link[rel="apple-touch-icon"]',"steph-fitness-B-blue-180.png?v=1");q('link[rel="icon"][type="image/svg+xml"]',"favicon.svg?v=4");q('link[rel="icon"][type="image/png"]',"steph-fitness-B-blue.png?v=1");}}catch(e){}})();</script>
 <style>
   html, body { margin: 0; background: #f6f3ec; color: #15130f; font-family: system-ui, -apple-system, sans-serif; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) body { background: #12110f; color: #efeae0; } }
   :root[data-theme="dark"] body { background: #12110f; color: #efeae0; }
+  :root[data-palette="blue"] body { background: #f3f8fd; color: #141a22; }
+  @media (prefers-color-scheme: dark) { :root[data-palette="blue"]:not([data-theme="light"]) body { background: #0b1626; color: #e8f1fb; } }
+  :root[data-palette="blue"][data-theme="dark"] body { background: #0b1626; color: #e8f1fb; }
   #boot { padding: 48px 20px; font-size: 15px; }
 </style>
 </head>
