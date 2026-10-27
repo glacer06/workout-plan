@@ -22,7 +22,4 @@ def svg(bg, label, view='0 0 1024 1024', size=1024, rx=0, shadow=True):
     rect=f'<rect x="{x}" y="{y}" width="{w}" height="{h}"{rxa} fill="{bg}"/>' if bg else ''
     sh='<ellipse cx="510" cy="905" rx="260" ry="32" fill="#000" opacity=".28" filter="url(#shadow)"/>' if shadow else ''
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}" height="{size}" viewBox="{view}" role="img" aria-label="{label}">\n {DEFS}\n {rect}\n {sh}\n {body()}\n</svg>\n'
-BG='#2B2B2B'
-open(W+'sims-fitness-gold.svg','w').write(svg(BG,'Sims Fitness icon, dark grey background'))
 open(W+'sims-fitness-gold-transparent.svg','w').write(svg(None,'Sims Fitness icon',shadow=False))
-open(W+'favicon-gold.svg','w').write(svg(BG,'Sims Fitness',view='77 61 860 860',size=64,rx=150,shadow=False))
