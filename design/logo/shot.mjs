@@ -10,8 +10,6 @@ async function shot(file, size, out, bg, transparent){
   await p.screenshot({path: out, omitBackground: !!transparent});
   await p.close();
 }
-await shot('sims-fitness-gold.svg',1024,W+'sims-fitness-gold.png');
-await shot('sims-fitness-gold.svg',180,W+'sims-fitness-gold-180.png');
 await shot('sims-fitness-gold-transparent.svg',1024,W+'sims-fitness-gold-transparent.png',null,true);
 // previews
 await shot('sims-fitness-gold-transparent.svg',256,'/tmp/prev-on-light.png','#f6f3ec');

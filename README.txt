@@ -1,10 +1,11 @@
 SIMS FITNESS - ICON SET
 
-Current mark (Sept 26, 2026): the same B kettlebell in black and gunmetal grey with an old gold S, on dark grey.
-  sims-fitness-gold.svg / .png          1024 x 1024 app icon on dark grey (#2B2B2B).
-  sims-fitness-gold-180.png             180 x 180 home screen icon (apple-touch-icon).
-  sims-fitness-gold-transparent.svg/.png Same mark, no background. Used in the app header.
-  favicon-gold.svg                      Tighter rounded crop for browser tabs.
+Current mark (Oct 17, 2026): the gunmetal icon. A dark kettlebell with an old gold S on a gunmetal grey gradient.
+  sims-fitness-gunmetal.png              1024 x 1024 app icon. Also the iPhone and Apple Watch app icon.
+  sims-fitness-gunmetal-180.png          180 x 180 home screen icon.
+  icon-nick-180/192/512.png              Nick's home screen and web app icons, the same gunmetal art.
+  sims-fitness-gold-transparent.svg/.png The kettlebell with no background. Used in the app header.
+The old dark grey (#2B2B2B) icon and its favicon were deleted on Oct 27, 2026. Use the gunmetal files.
 The blue files below are the original approved set, kept for reference and rollback.
 
 ORIGINAL B ICON SET (blue)
