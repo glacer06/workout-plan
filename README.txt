@@ -1,4 +1,7 @@
-SIMS FITNESS - ICON SET
+PAIR FITNESS - ICON SET
+
+(The app is Pair Fitness since Nov 8, 2026, Pair Strong for two days before that. The sims-fitness file names below
+were kept so nothing breaks.)
 
 Current mark (Oct 17, 2026): the gunmetal icon. A dark kettlebell with an old gold S on a gunmetal grey gradient.
   sims-fitness-gunmetal.png              1024 x 1024 app icon. Also the iPhone and Apple Watch app icon.
