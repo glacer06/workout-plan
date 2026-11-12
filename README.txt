@@ -3,11 +3,17 @@ PAIR FITNESS - ICON SET
 (The app is Pair Fitness since Nov 8, 2026, Pair Strong for two days before that. The sims-fitness file names below
 were kept so nothing breaks.)
 
-Current mark (Oct 17, 2026): the gunmetal icon. A dark kettlebell with an old gold S on a gunmetal grey gradient.
-  sims-fitness-gunmetal.png              1024 x 1024 app icon. Also the iPhone and Apple Watch app icon.
+Current mark (Nov 12, 2026, branch mark-kettlebell-p): the gunmetal kettlebell with a woven P embossed where the S was.
+Gold is the default Colors pick, blue is the electric blue palette. File names were kept.
+  sims-fitness-gunmetal.png              1024 x 1024 gold icon, opaque. Also the iPhone and Apple Watch app icon source.
   sims-fitness-gunmetal-180.png          180 x 180 home screen icon.
-  icon-nick-180/192/512.png              Nick's home screen and web app icons, the same gunmetal art.
-  sims-fitness-gold-transparent.svg/.png The kettlebell with no background. Used in the app header.
+  icon-nick-16/32/180/192/512.png        Gold home screen and web app icons (the 16 and 32 are for tab favicons).
+  icon-steph-16/32/180/192/512.png       The same mark on the blue palette.
+  apple-touch-icon(.precomposed).png     180 x 180, same as icon-nick-180.
+  sims-fitness-icon.mobileconfig         Web Clip for Nick's phone, 400 x 400 gold icon built in.
+Not redrawn yet: sims-fitness-gold-transparent.svg/.png and steph-fitness-B-transparent.svg/.png (the in-app header logo and
+loading splash mask) and favicon.svg. They still show the old S kettlebell and the blue B until a transparent P mark exists.
+Before the P (Oct 17): a dark kettlebell with an old gold S on a gunmetal grey gradient; it is in git history.
 The old dark grey (#2B2B2B) icon and its favicon were deleted on Oct 27, 2026. Use the gunmetal files.
 The blue files below are the original approved set, kept for reference and rollback.
 
