@@ -3,30 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Pair Fitness">
-<meta name="theme-color" id="tc-light" content="#f6f3ec" media="(prefers-color-scheme: light)">
-<meta name="theme-color" id="tc-dark" content="#12110f" media="(prefers-color-scheme: dark)">
 <meta name="robots" content="noindex, nofollow">
-<link rel="apple-touch-icon" sizes="180x180" href="icon-nick-180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icon-nick-192.png">
-<link rel="manifest" href="manifest-nick.webmanifest">
+<meta name="theme-color" content="#f6f3ec">
+<link rel="apple-touch-icon" sizes="180x180" href="/icon-nick-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-nick-192.png">
+<link rel="manifest" href="/manifest-nick.webmanifest">
 <title>Pair Fitness</title>
-<script>(function(){try{var r=document.documentElement,t=localStorage.getItem("gp-theme");if(t==="light"||t==="dark")r.setAttribute("data-theme",t);if(localStorage.getItem("sf-palette")==="blue"){r.setAttribute("data-palette","blue");var q=function(s,h){var l=document.querySelector(s);if(l)l.setAttribute("href",h);};q('link[rel="apple-touch-icon"]',"icon-steph-180.png");q('link[rel="icon"][type="image/png"]',"icon-steph-192.png");q('link[rel="manifest"]',"manifest-steph.webmanifest");}}catch(e){}})();</script>
 <style>
   html, body { margin: 0; background: #f6f3ec; color: #15130f; font-family: system-ui, -apple-system, sans-serif; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) body { background: #12110f; color: #efeae0; } }
-  :root[data-theme="dark"] body { background: #12110f; color: #efeae0; }
-  :root[data-palette="blue"] body { background: #f3f8fd; color: #141a22; }
-  @media (prefers-color-scheme: dark) { :root[data-palette="blue"]:not([data-theme="light"]) body { background: #0b1626; color: #e8f1fb; } }
-  :root[data-palette="blue"][data-theme="dark"] body { background: #0b1626; color: #e8f1fb; }
+  @media (prefers-color-scheme: dark) { body { background: #12110f; color: #efeae0; } }
   #boot { padding: 48px 20px; font-size: 15px; }
+  a { color: inherit; }
 </style>
 </head>
 <body>
-<div id="boot">Loading your plan…</div>
-<script src="https://voaproqjjegepcmbjvov.supabase.co/functions/v1/game-plan-app" onerror="document.getElementById('boot').textContent='Can\'t load the app right now. Check your connection and reopen it.'"></script>
+<!-- The old fitness.nicksims.co loader, now a redirect to app.pair.fitness (NSI-942). The script below is the same in index.html and 404.html (redirect.test.mjs checks it). -->
+<div id="boot">Pair Fitness has a new address. Taking you there. If nothing happens, <a href="https://app.pair.fitness/">open app.pair.fitness</a>.</div>
+<script>(function(){var NEW='app.pair.fitness';try{if(location.hostname===NEW)return;var p=location.pathname;if(p==='/index.html'||p==='/404.html')p='/';location.replace('https://'+NEW+p+location.search+location.hash);}catch(e){}})();</script>
 </body>
 </html>
